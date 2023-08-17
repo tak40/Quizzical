@@ -1,9 +1,14 @@
 import React from "react"
+import QuizPage from "./components/QuizPage"
+import StartScreen from "./components/StartScreen"
+import ResultPage from "./components/ResultPage"
 
 export default function App() {
   return (
-    <div>
-      <h1>Code goes here</h1>
-    </div>
-  )
+    <>
+        <StartScreen />
+        {/* <QuizPage />
+        <ResultPage /> */}
+    </>
+   )
 }
