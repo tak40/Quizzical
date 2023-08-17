@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   mode: 'development',
   "output": {
@@ -22,5 +24,10 @@ module.exports = {
   },
   "entry": {
     "index": "./index"
-  }
+  },
+  devServer: {
+    static: path.resolve(__dirname, '.'),
+    compress: true,
+    port: 8081
+}
 };
